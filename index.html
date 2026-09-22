@@ -1,236 +1,277 @@
-
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tiya M. | Personal Portfolio</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+```
+<title>Tiya M. | Personal Portfolio</title>
 
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f7f8fc;
-            color: #333;
-            line-height: 1.6;
-        }
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-        header {
-            background-color: #1e293b;
-            color: white;
-            text-align: center;
-            padding: 50px 20px;
-        }
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f7f8fc;
+        color: #333;
+        line-height: 1.6;
+    }
 
+    header {
+        background-color: #1e293b;
+        color: white;
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    /* Headshot */
+    .headshot {
+        display: block;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin: 0 auto 20px auto;
+        border: 4px solid white;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+
+    header p {
+        font-size: 1.1rem;
+        color: #cbd5e1;
+    }
+
+    nav {
+        background-color: #334155;
+        text-align: center;
+        padding: 15px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        color: #93c5fd;
+    }
+
+    .container {
+        max-width: 1000px;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+
+    section {
+        background-color: white;
+        padding: 30px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    h2 {
+        color: #1e293b;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #3b82f6;
+        padding-bottom: 8px;
+    }
+
+    .skills-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .skill {
+        background-color: #dbeafe;
+        color: #1e40af;
+        padding: 8px 15px;
+        border-radius: 20px;
+        font-size: 0.95rem;
+    }
+
+    .project {
+        border-left: 4px solid #3b82f6;
+        padding: 15px 20px;
+        margin-bottom: 20px;
+        background-color: #f8fafc;
+    }
+
+    .project h3 {
+        color: #1e293b;
+        margin-bottom: 8px;
+    }
+
+    .project a {
+        color: #2563eb;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .project a:hover {
+        text-decoration: underline;
+    }
+
+    footer {
+        text-align: center;
+        background-color: #1e293b;
+        color: white;
+        padding: 20px;
+        margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
         header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-
-        header p {
-            font-size: 1.1rem;
-            color: #cbd5e1;
-        }
-
-        nav {
-            background-color: #334155;
-            text-align: center;
-            padding: 15px;
+            font-size: 2rem;
         }
 
         nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            color: #93c5fd;
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 40px auto;
-            padding: 0 20px;
+            margin: 0 8px;
         }
 
         section {
-            background-color: white;
-            padding: 30px;
-            margin-bottom: 30px;
-            border-radius: 10px;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
-        }
-
-        h2 {
-            color: #1e293b;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #3b82f6;
-            padding-bottom: 8px;
-        }
-
-        .skills-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .skill {
-            background-color: #dbeafe;
-            color: #1e40af;
-            padding: 8px 15px;
-            border-radius: 20px;
-            font-size: 0.95rem;
-        }
-
-        .project {
-            border-left: 4px solid #3b82f6;
-            padding: 15px 20px;
-            margin-bottom: 20px;
-            background-color: #f8fafc;
-        }
-
-        .project h3 {
-            color: #1e293b;
-            margin-bottom: 8px;
-        }
-
-        .project a {
-            color: #2563eb;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .project a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            text-align: center;
-            background-color: #1e293b;
-            color: white;
             padding: 20px;
-            margin-top: 40px;
         }
+    }
+</style>
+```
 
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 2rem;
-            }
-
-            nav a {
-                margin: 0 8px;
-            }
-
-            section {
-                padding: 20px;
-            }
-        }
-    </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>Tiya M.</h1>
-        <p>Finance Student | Pre-Law Track | Future Legal Professional</p>
-    </header>
+```
+<!-- Header -->
+<header>
 
-    <nav>
-        <a href="#statement">About Me</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-    </nav>
+    <img src="https://raw.githubusercontent.com/tsm133/tsm133.github.io/main/Screenshot%202026-02-19%20135347.png"
+         alt="Tiya M. Headshot"
+         class="headshot">
 
-    <div class="container">
+    <h1>Tiya M.</h1>
 
-        <!-- Personal Statement -->
-        <section id="statement">
-            <h2>Personal Statement</h2>
+    <p>
+        Rutgers Business School Class of 2029 | Finance Major | Pre-Law Track
+    </p>
+
+</header>
+
+<!-- Navigation -->
+<nav>
+
+    <a href="#about">About Me</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+
+</nav>
+
+<!-- Main Content -->
+<div class="container">
+
+    <!-- About Me -->
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <p>
+            I am an undergraduate Finance student at Rutgers Business School
+            on the pre-law track, interested in exploring the connection
+            between law and business. My goal is to attend law school and
+            eventually practice law as an attorney.
+        </p>
+
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+
+        <h2>Skills</h2>
+
+        <div class="skills-list">
+
+            <span class="skill">Writing & Editing</span>
+            <span class="skill">Microsoft Excel</span>
+            <span class="skill">Research</span>
+            <span class="skill">Communication</span>
+            <span class="skill">Teamwork</span>
+            <span class="skill">Problem Solving</span>
+            <span class="skill">Customer Service</span>
+            <span class="skill">Time Management</span>
+
+        </div>
+
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+
+        <h2>Projects & Experience</h2>
+
+        <!-- Project 1 -->
+        <div class="project">
+
+            <h3>Law Office of Attorney Malkin | Office Administrative Intern</h3>
 
             <p>
-                I am a Finance student at Rutgers Business School on the
-                pre-law track, interested in combining financial knowledge
-                with legal and public service opportunities.
+                Gained hands-on experience in a law office by organizing
+                legal documents and case files, attending family law
+                proceedings, and assisting with legal briefs and
+                cross-examination preparation.
             </p>
-        </section>
 
-        <!-- Skills -->
-        <section id="skills">
-            <h2>Skills</h2>
+        </div>
 
-            <div class="skills-list">
-                <span class="skill">Financial Analysis</span>
-                <span class="skill">Microsoft Excel</span>
-                <span class="skill">Research</span>
-                <span class="skill">Communication</span>
-                <span class="skill">Teamwork</span>
-                <span class="skill">Problem Solving</span>
-                <span class="skill">Legal Research</span>
-                <span class="skill">Time Management</span>
-            </div>
-        </section>
+        <!-- Project 2 -->
+        <div class="project">
 
-        <!-- Projects -->
-        <section id="projects">
-            <h2>Projects</h2>
+            <h3>South Asians in Legal Studies | Board & Editorial Committee Chair</h3>
 
-            <div class="project">
-                <h3>1. Walmart Pharmacy Technician Job Simulation</h3>
+            <p>
+                Serve as a committee chair on the SAILS board and help lead
+                the Chai Chronicles newsletter, which covers legal and
+                community issues affecting the South Asian community.
+            </p>
 
-                <p>
-                    Completed a virtual job simulation that introduced
-                    pharmacy technician responsibilities and helped me
-                    develop problem-solving and professional skills.
-                </p>
+        </div>
 
-                <a href="https://www.theforage.com/" target="_blank">
-                    View Simulation Platform
-                </a>
-            </div>
+        <!-- Project 3 -->
+        <div class="project">
 
-            <div class="project">
-                <h3>2. Airbnb: Home Sharing in China Case Study</h3>
+            <h3>Women's Entrepreneurship Day Organization | Intern</h3>
 
-                <p>
-                    Analyzed a business case involving Airbnb's home-sharing
-                    operations in China, focusing on business challenges,
-                    market conditions, and strategic decision-making.
-                </p>
+            <p>
+                Gained experience working with a professional organization
+                focused on entrepreneurship while developing communication,
+                teamwork, and organizational skills.
+            </p>
 
-                <a href="#" target="_blank">
-                    Add Project Link
-                </a>
-            </div>
+        </div>
 
-            <div class="project">
-                <h3>3. Chai Chronicles Newsletter</h3>
+    </section>
 
-                <p>
-                    Worked with the Editorial Committee of South Asians in
-                    Legal Studies to review and develop content covering
-                    legal and community issues affecting the South Asian
-                    community.
-                </p>
+</div>
 
-                <a href="#" target="_blank">
-                    Add Project Link
-                </a>
-            </div>
+<!-- Footer -->
+<footer>
 
-        </section>
+    <p>
+        &copy; 2026 Tiya M. | Personal Portfolio
+    </p>
 
-    </div>
-
-    <footer>
-        <p>&copy; 2026 Tiya M. | Personal Portfolio</p>
-    </footer>
+</footer>
+```
 
 </body>
 </html>
